@@ -1,0 +1,90 @@
+html {
+  font-size: $font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $text-font;
+}
+
+main {
+  background: rgb(170,51,170);
+  background: linear-gradient(40deg, rgba(170,51,170,1) 0%, rgba(96,55,145,1) 100%); 
+  padding: 5rem 0 10rem;
+}
+
+.box-conditions {
+  color: black;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: .4rem .4rem 2rem rgba(0,0,0,.4);
+  font-size: 2rem;
+  padding: 4rem;
+
+  & span.initial-price {
+    position: relative;
+    display: inline-block;
+    &:after {
+      background: red;
+      content: "";
+      height: 2px;
+      left: -8px;
+      margin-top: -1px;
+      position: absolute;
+      top: 50%;
+      width: 115%;
+      z-index: 1;
+    }
+  }
+  & span.current-price {
+    display: block;
+  }    
+  & span.price {
+    display: block;
+    & .rs {
+      color: $primary-color;
+      font-size: 3rem;
+      font-family: $title-font;
+    }
+    & .number {
+      color: $primary-color;
+      font-family: $title-font;
+      font-size: 6rem;
+    }
+    & .cents {
+      color: $primary-color;
+      font-size: 6rem;
+      font-family: $title-font;
+    }
+    & .month {
+      font-style: italic;
+      &:after {
+        content: "*";
+        color: $primary-color;
+      }
+    }
+  }
+  & ul {
+    padding: 2rem 0 3rem;
+    border-top: .5rem solid #eee;
+    border-bottom: .5rem solid #eee;
+    margin-top: 1rem;
+    & li {
+    list-style: none;
+      &:before {
+        content: url(../img/icon-checked.svg);
+        display: inline-block;
+        margin-right: 2rem;
+        width: 1.5rem;
+      }
+    }
+  }
+  & em {
+    font-size: 1.4rem;
+    &:before {
+      content: "*";
+      margin-right: .5rem;
+      color: $primary-color;
+    }
+  }
+}

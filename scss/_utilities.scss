@@ -1,0 +1,25 @@
+/* Iframes responsivos */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Animação da Intro */
+.intro-animation {
+  animation: .5s intro-animation ease;
+}
+
+@keyframes intro-animation {
+  0% {opacity: 0; transform: translateX(-2rem);}
+  100% {opacity: 1; transform: translateX(0);}
+}
