@@ -93,7 +93,7 @@ section {
   }
 }
 
-#why {
+#why, #reports {
   background: #eee;
 }
 
@@ -108,5 +108,48 @@ section {
   & img {
     margin-bottom: 20px;
     max-width: 55px;
+  }
+}
+
+#what, #alessandra {
+  background: rgb(170,51,170);
+  background: linear-gradient(40deg, rgba(170,51,170,1) 0%, rgba(96,55,145,1) 100%);
+  color: white;
+}
+
+.piece {
+  border: 2px solid white;
+  border-radius: 6px;
+  background:transparent;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bonus {
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 6px;
+  padding: 3rem;
+}
+
+#who {
+  & ul {
+    & li {
+      list-style: none;
+        &:before {
+          content: url(../img/icon-checked.svg);
+          display: inline-block;
+          margin-right: 2rem;
+          width: 1.5rem;
+        }
+      }
+  }
+}
+
+#alessandra {
+  & img {
+    border-radius: 50%;
+    border: 15px solid #eee;
+    box-shadow: .5rem .5rem 1rem rgba(0,0,0,.2);
   }
 }

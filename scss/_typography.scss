@@ -32,9 +32,43 @@ main h1, main p {
    }
  }
 
-p {
+ #who {
+   & h2 {
+     color: $primary-color;
+   }
+ }
+
+p, summary {
   font-size: 2rem;
+}
+
+p {
   margin-bottom: 3rem;
+}
+
+summary {
+  font-weight: 900;
+  font-family: $title-font;
+  margin-bottom: 0;
+}
+
+details p {
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+
+details {
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+  padding: 2rem;
+  width: 100%;
+  &[open] summary {
+    border-bottom: 1px solid #333;
+    padding: 0 0 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 p + .button {
@@ -43,4 +77,8 @@ p + .button {
 
 .row + p {
   margin-top: 3rem;
+}
+
+li {
+  font-size: 2rem;
 }
