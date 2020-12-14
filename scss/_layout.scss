@@ -13,6 +13,10 @@ main {
   padding: 5rem 0 10rem;
 }
 
+section {
+  padding: 8rem 0;
+}
+
 .box-conditions {
   color: black;
   background: white;
@@ -86,5 +90,23 @@ main {
       margin-right: .5rem;
       color: $primary-color;
     }
+  }
+}
+
+#why {
+  background: #eee;
+}
+
+.reason {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(0,0,0,0.1);
+  padding: 3rem 3rem 4rem;
+  & p {
+    margin-bottom: 0;
+  }
+  & img {
+    margin-bottom: 20px;
+    max-width: 55px;
   }
 }

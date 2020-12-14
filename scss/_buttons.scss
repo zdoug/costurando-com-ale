@@ -23,3 +23,14 @@
     box-shadow: .2rem .2rem 1rem rgba(0,0,0,.3);
   }
 }
+
+.button-secondary {
+  border: 3px solid $primary-color;
+  color: $primary-color;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  box-shadow: none;
+  &:hover {
+    background-color: $primary-color;
+  }
+}
