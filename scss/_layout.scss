@@ -93,6 +93,13 @@ section {
   }
 }
 
+#about {
+  & img {
+    max-width: 6rem;
+    margin-bottom: 4rem;
+  }
+}
+
 #why, #reports {
   background: #eee;
 }
@@ -117,6 +124,20 @@ section {
   color: white;
 }
 
+#what {
+  & img[alt="Máquina de costura"] {
+    max-width: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-svg {
+  margin-bottom: 3rem;
+  margin-right: .5rem;
+  max-width: 6rem;
+  vertical-align: middle;
+}
+
 .piece {
   border: 2px solid white;
   border-radius: 6px;
@@ -130,6 +151,17 @@ section {
   border: 2px solid rgba(255,255,255,1);
   border-radius: 6px;
   padding: 3rem;
+  background: white;
+  color: black;
+  & img {
+    margin-bottom: 2rem;
+    max-width: 6rem;
+  }
+  & p {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
 }
 
 #who {
@@ -151,5 +183,16 @@ section {
     border-radius: 50%;
     border: 15px solid #eee;
     box-shadow: .5rem .5rem 1rem rgba(0,0,0,.2);
+    position: sticky;
+    top: 3rem;
+  }
+}
+
+footer {
+  background: $primary-color;
+  color: white;
+  padding: 1rem 0;
+  span.copyright {
+    font-size: 1.6rem;
   }
 }

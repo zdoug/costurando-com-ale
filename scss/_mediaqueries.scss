@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+  html {
+    font-size: $font-size * .8;
+  }
+  main {
+    text-align: center;
+  }
+  .reason {
+    margin: 0 auto;
+    max-width: 50rem;
+    padding: 2rem 2rem 1rem;
+  }
+
+  #reports {
+    & img {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+  }
+  #alessandra {
+    & img {
+      border-width: 1.2rem;
+      max-width: 30rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
